@@ -35,6 +35,7 @@ const CheckoutForm = (props) => {
           First Name:
           <input
             name="firstName"
+            id="firstName"
             value={values.firstName}
             onChange={handleChanges}
           />
