@@ -30,13 +30,33 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. Explain how to build stateful class components.
 
+  Step one - Class Extends React.Component -> this will bring in the BASE react component and allow you access to the lifecycle api.
+
+  step two - constructor() and super() not specific to components -> this will allow us to copy over methods into our next instance of React.Component
+
+  step 3 - define state with this 
+
+  step 4- call api in ComponentDidMount() if necessary
+
+  step 5 - render () to bring content to page.
+
 2. Describe the different phases of the component lifecycle.
+
+  Birth - where mounting occurs as well as render
+  Growth - where props, state, and updates occur. Render also occurs when state is changed
+  Death - component will unmount
 
 3. Demonstrate an understanding of class component lifecycle methods.
 
+  componentDidMount() - this allows us to set state based on conditionals, allows us to call apis to bring in external data in our applciation this occurs after the first render()
+
 4. Define stateful logic.
 
+  stateful logic is any logic(code) that affects change. Whether that is an api call, a event fired, or user behaviors on an application.
+
 5. Describe how to test a React component with React Testing Library.
+
+  We can test a react component by querying the application HTML to get the specific content we'd like to test. We can then use keywords like expect() to assert what value we the tester expect to see. We can also use fireEvents to progrmmaticlly test events to see assertions(expected values).
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
